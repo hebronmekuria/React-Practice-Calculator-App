@@ -1,0 +1,75 @@
+/* App.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f3f3;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  width: 400px;
+}
+
+.calculator {
+  background-color: #2d2d2d;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+  background-color: #272727;
+  padding: 15px;
+  text-align: right;
+}
+
+input {
+  width: calc(100% - 30px);
+  padding: 10px;
+  font-size: 1.5em;
+  border: none;
+  background: none;
+  color: #fff;
+  outline: none;
+}
+
+.result {
+  display: block;
+  font-size: 1.2em;
+  color: #ccc;
+  margin-top: 5px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #e6e6e6;
+  color: #2d2d2d;
+}
+
+button:hover {
+  background-color: #d9d9d9;
+}
+
+.clear {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.clear:hover {
+  background-color: #bd2130;
+}
